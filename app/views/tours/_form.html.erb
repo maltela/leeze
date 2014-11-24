@@ -29,7 +29,7 @@
   </div>
   <div>
     <%= f.label :category %><br>
-    <%= f.collection_select :category_ids,Category.all, :id, :name, {selected: @tour_category_ids,multiple: true}%>
+    <%= f.collection_select :category_ids,Category.all, :id, :name, {selected: @tour.ids ,multiple: true}%>
   </div>
   <div class="actions">
     <%= f.submit %>
